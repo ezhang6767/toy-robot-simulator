@@ -1,0 +1,21 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px); /* 5 列，每列 60px */
+    grid-template-rows: repeat(5, 60px); /* 5 行，每行 60px */
+    gap: 2px;
+    background-color: black;
+    padding: 5px;
+    border: 2px solid #333;
+  }
+  
+  .cell {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+  }
+  
