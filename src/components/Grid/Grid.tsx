@@ -6,6 +6,7 @@ const Grid: React.FC<{ x: number; y: number; facing: string }> = ({ x, y, facing
   const gridSize = 5;
 
   return (
+    <div className={styles.gridContainer}>
     <div className={styles.grid}>
       {Array.from({ length: gridSize * gridSize }).map((_, index) => {
         const row = Math.floor(index / gridSize);
@@ -17,6 +18,7 @@ const Grid: React.FC<{ x: number; y: number; facing: string }> = ({ x, y, facing
           </div>
         );
       })}
+    </div>
     </div>
   );
 };
